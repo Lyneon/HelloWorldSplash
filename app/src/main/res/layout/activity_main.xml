@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/main_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:padding="5dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="悬浮窗权限"
+				android:id="@+id/main_button_permission"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/main_textview_message"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content">
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"
+						android:id="@+id/main_edittext_message"
+						android:hint="显示内容"/>
+
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="保存"
+					android:id="@+id/main_button_message"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.yhz.study.colorpicker.ColorPickView
+					android:id="@+id/main_colorpickview_textcolor"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="保存"
+					android:id="@+id/main_button_color"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content">
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"
+						android:id="@+id/main_edittext_size"
+						android:hint="文字大小"
+						android:inputType="number"/>
+
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="保存"
+					android:id="@+id/main_button_size"/>
+
+			</LinearLayout>
+            
+            <!--
+
+			<Switch
+                android:text="跑马灯效果"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/main_switch_marquee"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:layout_width="0dp"
+                    android:layout_weight="1"
+					android:layout_height="wrap_content">
+
+					<EditText
+						android:layout_width="match_parent"
+						android:ems="10"
+						android:layout_height="wrap_content"
+						android:id="@+id/main_edittext_speed"
+						android:hint="滚动速度"
+						android:inputType="number"/>
+
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="保存"
+					android:id="@+id/main_button_speed"/>
+
+			</LinearLayout>
+            
+            -->
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="启动"
+					android:id="@+id/main_button_start"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="停止"
+					android:id="@+id/main_button_stop"
+					android:layout_weight="1"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
